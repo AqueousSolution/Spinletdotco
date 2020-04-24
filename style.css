@@ -60,8 +60,8 @@ html {
 }
 
 .lastmost {
-  background-image: radial-gradient(#ffffff, #c4c4c4);
-  color: #000;
+  background-image: radial-gradient(#f3a183, #ec6f66);
+  color: #fff;
 }
 .contents {
   display: flex;
@@ -71,6 +71,7 @@ html {
 }
 
 .title {
+  margin-top: -5%;
   line-height: 4rem;
   font-size: 3.1rem;
   font-family: "PT Serif", serif;
@@ -88,7 +89,7 @@ html {
 .learn-more {
   margin-top: 1rem;
 }
-a {
+a.learn-more {
   color: #000;
   text-transform: uppercase;
   text-decoration: none;
@@ -98,7 +99,7 @@ a {
   padding: 10px 0px;
   position: relative;
 }
-a:after {
+a.learn-more:after {
   background: none repeat scroll 0 0 transparent;
   bottom: 0;
   content: "";
@@ -110,7 +111,7 @@ a:after {
   transition: width 0.3s ease 0s, left 0.3s ease 0s;
   width: 0;
 }
-a:hover:after {
+a.learn-more:hover:after {
   width: 20%;
   left: 0;
   cursor: pointer;
@@ -341,7 +342,7 @@ section.clients {
 }
 
 .short-navline {
-  width: 65%;
+  width: 53%;
   top: 55%;
   left: 50%;
   background-color: #fff;
@@ -372,6 +373,11 @@ section.clients {
   padding: 1% 10% 1% 10%;
 }
 
+.serviced {
+  text-align: center;
+  margin-left: 50%;
+  transform: translate(-50%);
+}
 .service {
   text-align: center;
   width: 100%;
@@ -560,7 +566,7 @@ section.clients {
   text-align: center;
   padding-top: 5%;
   height: 100vh;
-  margin-top: -30%;
+  margin-top: -22%;
 }
 .our-stories {
   text-align: center;
@@ -925,11 +931,12 @@ img.pos:hover {
     font-size: 1.8rem;
     font-weight: 100;
     white-space: normal;
-    padding: 0 3rem 0 3rem;
+    padding: 1rem 3rem 0 3rem;
+    margin-top: 10%;
   }
 
   .content {
-    margin-top: 1.2rem;
+    margin-top: 3.5rem;
     font-size: 0.9rem;
     font-weight: 300;
     width: 100%;
@@ -1015,7 +1022,9 @@ img.pos:hover {
   }
 
   .main {
-    margin-top: 12%;
+    margin-top: 7%;
+    grid-template-columns: repeat(4, 1fr);
+    height: 35vh;
   }
 
   .pic-eight {
@@ -1035,4 +1044,22 @@ img.pos:hover {
   .pic-four {
     display: none;
   }
+  .our-story {
+    padding-top: 5%;
+    height: 55vh;
+    margin-top: -22%;
+  }
+
+  .our-partners {
+    height: 60vh;
+  }
+}
+
+.footer_items {
+  display: flex;
+  justify-content: center;
+}
+
+.footer_item {
+  margin-left: 1.5rem;
 }
